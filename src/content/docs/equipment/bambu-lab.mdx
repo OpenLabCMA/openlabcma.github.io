@@ -1,0 +1,43 @@
+---
+title: Bambu Lab 3D Printers
+---
+
+import VideoCard from '../../../components/VideoCard.astro';
+
+Two machines. {/* EDIT: confirm model (X1 Carbon? P1S? A1?) and whether AMS units are attached */}
+
+| | |
+|---|---|
+| Type | FDM, fast (CoreXY) |
+| Build volume | 256 × 256 × 256 mm {/* EDIT: confirm for our model */} |
+| Materials | PLA, PETG; others by arrangement |
+| Slicer | Bambu Studio |
+| File transfer | LAN / SD card {/* EDIT: our lab setup */} |
+
+## Before you start
+
+1. Fast printers fail fast too; watch the first layer.
+
+## Workflow
+
+1. Slice in Bambu Studio with the printer's profile.
+2. Send the job (LAN or SD card, per lab setup).
+3. Watch the first layer. Remove prints only after the bed cools.
+
+## Troubleshooting
+
+| Symptom | First things to try |
+|---|---|
+| AMS filament jam | {/* EDIT: our procedure */} |
+| Adhesion problems | Clean plate with IPA, correct plate type selected in slicer |
+
+## Manuals
+
+- [Bambu Lab wiki](https://wiki.bambulab.com/) — official docs.
+
+## Videos
+
+<ul class="video-grid">
+  <VideoCard platform="bili" title="Bambu Studio basics" href="https://search.bilibili.com/all?keyword=Bambu+Studio+教程" />
+  <VideoCard platform="xhs" title="Multi-color printing" href="https://www.xiaohongshu.com/search_result?keyword=拓竹多色打印" />
+</ul>

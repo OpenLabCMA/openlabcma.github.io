@@ -1,0 +1,15 @@
+---
+interface Props {
+  platform: 'xhs' | 'yt' | 'dy' | 'bili';
+  title: string;
+  href: string;
+}
+const { platform, title, href } = Astro.props;
+const labels = { xhs: 'XHS', yt: 'YouTube', dy: 'Douyin', bili: 'Bilibili' };
+---
+
+<li>
+  <span class={`badge badge-${platform}`}>{labels[platform]}</span>
+  <span class="title">{title}</span>
+  <a href={href} target="_blank" rel="noopener">Watch</a>
+</li>

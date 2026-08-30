@@ -1,0 +1,44 @@
+---
+title: Prusa Mini 3D Printers
+---
+
+import VideoCard from '../../../components/VideoCard.astro';
+
+Two machines.
+
+| | |
+|---|---|
+| Type | FDM, 0.4 mm nozzle |
+| Build volume | 180 × 180 × 180 mm |
+| Materials | PLA, PETG {/* EDIT: lab stock */} |
+| Slicer | PrusaSlicer |
+| File transfer | USB stick, `.gcode`/`.bgcode` |
+
+## Before you start
+
+1. Slice with the built-in Prusa Mini profile; do not guess settings.
+
+## Workflow
+
+1. Export STL/3MF from your CAD tool.
+2. Slice in PrusaSlicer with the Mini profile and correct filament type.
+3. USB stick into the printer, select the file, watch the first layer complete before leaving.
+4. Remove the print when the bed cools; flex the sheet, do not pry with tools.
+
+## Troubleshooting
+
+| Symptom | First things to try |
+|---|---|
+| First layer not sticking | Clean sheet with IPA, re-run calibration |
+| Stringing | Correct filament profile, dry the filament |
+| Clicking extruder | Check nozzle clog, filament tangle on spool |
+
+## Manuals
+
+- [Prusa Mini handbook and knowledge base](https://help.prusa3d.com/) — official docs, excellent.
+
+## Videos
+
+<ul class="video-grid">
+  <VideoCard platform="bili" title="Prusa Mini first print" href="https://search.bilibili.com/all?keyword=prusa+mini" />
+</ul>

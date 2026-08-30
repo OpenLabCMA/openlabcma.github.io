@@ -1,0 +1,9 @@
+---
+import Default from '@astrojs/starlight/components/Footer.astro';
+const onReportPage = Astro.url.pathname.replace(/\/$/, '').endsWith('/report');
+---
+
+<Default><slot /></Default>
+{!onReportPage && (
+  <a class="report-problem-button" href="/report/">Report a problem</a>
+)}

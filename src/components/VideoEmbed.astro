@@ -1,0 +1,17 @@
+---
+// Inline player for lab-made instructional videos.
+// Bilibili: pass bvid="BV1xx411c7mD". YouTube: pass youtube="VIDEO_ID".
+interface Props {
+  bvid?: string;
+  youtube?: string;
+  title?: string;
+}
+const { bvid, youtube, title = 'video' } = Astro.props;
+const src = bvid
+  ? `https://player.bilibili.com/player.html?bvid=${bvid}&autoplay=0`
+  : `https://www.youtube.com/embed/${youtube}`;
+---
+
+<div class="video-embed">
+  <iframe src={src} title={title} allowfullscreen loading="lazy"></iframe>
+</div>
