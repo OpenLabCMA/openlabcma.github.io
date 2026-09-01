@@ -10,6 +10,15 @@
   --sl-color-accent-high: #00463e;
 }
 
+/* Machine photo floated beside the spec table */
+.machine-photo {
+  float: right;
+  max-width: 230px;
+  margin: 0 0 1rem 1.25rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--sl-color-gray-5);
+}
+
 /* Platform badges for video links */
 .badge {
   display: inline-block;
